@@ -1,0 +1,21 @@
+<h1>Add Meetup</h1>
+
+<?php
+    $form = $this->form; /* @var $form \Zend\Form\Form */
+?>
+
+<?= $this->form()->openTag($form);?>
+
+<?= $this->formRow($form->get('title'));?>
+
+<?= $this->formRow($form->get('description'));?>
+
+<?= $this->formRow($form->get('datestart'));?>
+
+<br />
+
+<a href="javascript:history.go(-1)" class="btn btn-primary">Retour</a>
+
+<?= $this->formInput($form->get('submit')->setAttribute('class','btn btn-primary'))?>
+
+<?= $this->form()->closeTag($form); ?>
