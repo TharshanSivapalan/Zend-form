@@ -45,12 +45,13 @@ class Meetup
     private $dateend;
 
 
-    public function __construct(string $title, string $description = '', string $datestart = '')
+    public function __construct(string $title, string $description = '', string $datestart = '', string $dateend = '')
     {
         $this->id = Uuid::uuid4()->toString();
         $this->title = $title;
         $this->description = $description;
         $this->datestart = $datestart;
+        $this->dateend = $dateend;
     }
 
     /**
@@ -81,12 +82,12 @@ class Meetup
     {
         return $this->datestart;
     }
-/*
-    public function getDateend() : \datetime
+
+    public function getDateend() : string
     {
         return $this->dateend;
     }
-    */
+
     public function setTitle (string $title) : void
     {
         $this->title = $title;
@@ -101,12 +102,12 @@ class Meetup
     {
         $this->datestart = $datestart;
     }
-/*
-    public function setDateend(\datetime $dateend) : void
+
+    public function setDateend(string $dateend) : void
     {
         $this->dateend = $dateend;
     }
    
-*/
+
 
 }

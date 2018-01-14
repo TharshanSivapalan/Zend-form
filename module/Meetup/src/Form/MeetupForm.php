@@ -45,15 +45,15 @@ class MeetupForm extends Form implements InputFilterProviderInterface
                     'label' => 'Date de début (Y-m-d H:i:s)',
                 ],
             ]);
-/*
+
            $this->add([
-                'type' => Element\Date::class,
+                'type' => Element\Text::class,
                 'name' => 'dateend',
                 'options' => [
                     'label' => 'dateend',
                 ],
             ]);
-*/
+
             $this->add([
                 'type' => Element\Submit::class,
                 'name' => 'submit',
