@@ -42,7 +42,7 @@ class MeetupForm extends Form implements InputFilterProviderInterface
                 'type' => Element\Text::class,
                 'name' => 'datestart',
                 'options' => [
-                    'label' => 'Date de début (Y-m-d H:i:s)',
+                    'label' => 'Date de début (Y-m-d)',
                 ],
             ]);
 
